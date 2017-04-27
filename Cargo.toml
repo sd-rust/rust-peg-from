@@ -1,0 +1,10 @@
+[package]
+name = "rust-peg-from"
+version = "0.1.0"
+authors = ["Sandeep Datta <datta.sandeep@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+peg = { path = "../../external/rust-peg" }
+
+[dependencies]

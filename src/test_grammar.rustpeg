@@ -1,0 +1,10 @@
+use asg::*;
+
+pub expression -> Number
+	= float / integer
+	
+integer -> i64
+	= n:$([0-9]+) { n.parse().unwrap() }
+	
+float -> f64
+	= n:$([0-9]+ "." [0-9]+) { n.parse().unwrap() }
